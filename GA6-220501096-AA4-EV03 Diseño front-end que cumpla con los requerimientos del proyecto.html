@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxidí Travel</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e9b117; 
+            font-family: Arial, sans-serif;
+        }
+
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 70px;
+            color:white;
+        }
+
+        .imagen-container {
+            width: 300px;
+            height: 300px;
+            background-color: whitesmoke; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .imagen-container:hover {
+            background-color: #ff5733; 
+        }
+
+        .imagen-container img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Taxidí Travel: Viaja fácil</h1>
+
+    <div class="imagen-container">
+        <img id="imagen" src="" alt="Imagen">
+    </div>
+
+    <script>
+        document.getElementById("imagen").src = "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=600";
+    </script>
+
+</body>
+</html>
